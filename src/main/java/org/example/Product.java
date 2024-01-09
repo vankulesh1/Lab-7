@@ -1,3 +1,4 @@
+package org.example;
 public class Product {
     private Integer id;
     private String name;
@@ -11,7 +12,9 @@ public class Product {
         this.stock = stock;
     }
 
-        public String toString() {
+    // Гетери та сетери
+
+    public String toString() {
         return "Product{id=" + id + ", name='" + name + "', price=" + price + ", stock=" + stock + "}";
     }
 }
