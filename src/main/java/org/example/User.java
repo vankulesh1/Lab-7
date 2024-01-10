@@ -13,7 +13,16 @@ public class User {
         this.username = username;
         this.cart = new HashMap<>();
     }
+    public String getUsername() {
+        return username;
+    }
 
+    public Integer getId() {
+        return id;
+    }
+    public Map<Product, Integer> getCart() {
+        return cart;
+    }
 
     public void addToCart(Product product, int quantity) {
         cart.put(product, cart.getOrDefault(product, 0) + quantity);
