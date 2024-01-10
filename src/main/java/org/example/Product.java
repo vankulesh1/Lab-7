@@ -1,4 +1,5 @@
 package org.example;
+
 public class Product {
     private Integer id;
     private String name;
@@ -12,7 +13,39 @@ public class Product {
         this.stock = stock;
     }
 
-    // Гетери та сетери
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
 
     public String toString() {
         return "Product{id=" + id + ", name='" + name + "', price=" + price + ", stock=" + stock + "}";
